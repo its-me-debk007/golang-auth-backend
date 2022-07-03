@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/its-me-debk007/auth-backend/database"
-	"github.com/its-me-debk007/auth-backend/routes"
+	"github.com/its-me-debk007/golang-auth-backend/database"
+	"github.com/its-me-debk007/golang-auth-backend/routes"
 	"github.com/joho/godotenv"
 	"log"
 	"os"

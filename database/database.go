@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/its-me-debk007/auth-backend/models"
+	"github.com/its-me-debk007/golang-auth-backend/models"
 	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

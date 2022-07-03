@@ -13,8 +13,8 @@ import (
 
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gofiber/fiber/v2"
-	"github.com/its-me-debk007/auth-backend/database"
-	"github.com/its-me-debk007/auth-backend/models"
+	"github.com/its-me-debk007/golang-auth-backend/database"
+	"github.com/its-me-debk007/golang-auth-backend/models"
 	"golang.org/x/crypto/bcrypt"
 )
 
