@@ -1,7 +1,6 @@
 package database
 
 import (
-	"fmt"
 	"log"
 	"os"
 
@@ -17,13 +16,12 @@ func ConnectDB() {
 	if err := godotenv.Load(); err != nil {
 		log.Fatal(err.Error())
 	}
-	dbPassword := os.Getenv("DB_PASSWORD")
-	dbName := os.Getenv("DB_NAME")
-	dbUsername := os.Getenv("DB_USERNAME")
+	//dbPassword := os.Getenv("DB_PASSWORD")
+	//dbName := os.Getenv("DB_NAME")
+	//dbUsername := os.Getenv("DB_USERNAME")
+	//dbUrl := fmt.Sprintf("postgresql://%s:%s@localhost/%s?sslmode=disable", dbUsername, dbPassword, dbName)
 
-	dbUrl := fmt.Sprintf("postgresql://%s:%s@localhost/%s?sslmode=disable", dbUsername, dbPassword, dbName)
-
-	//dbUrl := os.Getenv("DATABASE_URL")
+	dbUrl := os.Getenv("DATABASE_URL")
 
 	db, err := gorm.Open(postgres.Open(dbUrl), &gorm.Config{})
 	if err != nil {

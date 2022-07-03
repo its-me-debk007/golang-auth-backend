@@ -28,7 +28,7 @@ func main() {
 
 	port := os.Getenv("PORT")
 
-	log.Println("Port is " + port)
+	log.Println("PORT IS:- " + port)
 
 	if err := app.Listen(":" + port); err != nil {
 		log.Fatal("App listen error:-\n" + err.Error())
