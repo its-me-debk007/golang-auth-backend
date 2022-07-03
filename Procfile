@@ -1,1 +1,1 @@
-web: bin/golang-auth-backend
+web: golang-auth-backend
