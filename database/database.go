@@ -5,7 +5,6 @@ import (
 	"os"
 
 	"github.com/its-me-debk007/golang-auth-backend/models"
-	"github.com/joho/godotenv"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
@@ -13,9 +12,9 @@ import (
 var DB *gorm.DB
 
 func ConnectDB() {
-	if err := godotenv.Load(); err != nil {
-		log.Fatal(err.Error())
-	}
+	//if err := godotenv.Load(); err != nil {
+	//	log.Fatal(err.Error())
+	//}
 	//dbPassword := os.Getenv("DB_PASSWORD")
 	//dbName := os.Getenv("DB_NAME")
 	//dbUsername := os.Getenv("DB_USERNAME")

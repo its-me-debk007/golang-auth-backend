@@ -5,7 +5,6 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/its-me-debk007/golang-auth-backend/database"
 	"github.com/its-me-debk007/golang-auth-backend/routes"
-	"github.com/joho/godotenv"
 	"log"
 	"os"
 )
@@ -21,10 +20,6 @@ func main() {
 	}))
 
 	routes.SetupRoutes(app)
-
-	if err := godotenv.Load(); err != nil {
-		log.Fatal(err.Error())
-	}
 
 	port := os.Getenv("PORT")
 
